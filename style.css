@@ -100,10 +100,41 @@ header nav a {
 }
 
 /* ************* */
+/* Money -tyylit */
+/* ************* */
+#money {
+    clear: both;
+    background-color: #35424a;
+}
+
+#money h2 {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 2em 0;
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+
+#money .calculator {
+    font-size: 1.6em;
+    width: 70%;
+    float: right;
+    padding: 2em 0;
+}
+
+.calculator input, .calculator select {
+    padding: 5px;
+    border-radius: 5px;;
+}
+
+
+/* ************* */
 /* Boxes -tyylit */
 /* ************* */
 
 #boxes {
+    clear: both;
     margin: 30px 0;
 }
 
