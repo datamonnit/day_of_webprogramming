@@ -2,6 +2,12 @@ var rates = null;
 var myObj = null;
 var rateKeys = null
 var rateSelect = document.getElementById("rateSelect");
+var amountToChange = document.getElementById("amountToChange");
+var result = document.getElementById("result");
+
+amountToChange.addEventListener('keyup', calculateRate);
+rateSelect.addEventListener('change', calculateRate);
+
 
 
 var xmlhttp = new XMLHttpRequest();
@@ -27,4 +33,28 @@ function getRates(ratesJSON){
         rateSelect.appendChild(optionElem);
     }
     
+}
+
+// let calculateRate = () => {
+function calculateRate(){
+
+  let amount = parseInt(amountToChange.value);
+  let rate = parseFloat(rateSelect.value);
+  console.log(amount);
+  console.log(rate);
+  
+  if (!isNaN(amount)) {
+    let money = amount * rate;
+
+    result.value = money.toFixed(2);
+  
+  } else {
+
+    result.value = "Oops! Be careful!"
+
+  }
+
+  
+
+
 }

@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     min-width: 700px;
+    height: 100px;
 }
 
 .highlight {
@@ -103,24 +104,26 @@ header nav a {
 /* Money -tyylit */
 /* ************* */
 #money {
+    padding: 0;
+    height: auto;
+    overflow: hidden;
     clear: both;
     background-color: #35424a;
+    color: #f4f4f4;
 }
 
 #money h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin: 0;
-    padding: 2em 0;
-    width: 30%;
-    float: left;
-    text-align: right;
+    padding: 0.3em 0;
+    text-align: center;
 }
 
 #money .calculator {
     font-size: 1.6em;
-    width: 70%;
-    float: right;
-    padding: 2em 0;
+    padding: 0.5em 0;
+    margin: 0;
+    text-align: center;
 }
 
 .calculator input, .calculator select {
