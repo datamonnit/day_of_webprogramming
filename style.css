@@ -76,17 +76,10 @@ header nav a {
 
 #showcase {
     background-image: url('img/bank.jpg');
+    min-height: 250Spx;
     color: #f4f4f4;
     text-align: center;
     padding: 60px 5px;
-}
-
-.showcase-container {
-    background-color: rgb(0,0,0,0.7);
-    width: 40%;
-    min-width: 20em;
-    margin: 0 auto;
-    padding: 1em;
 }
 
 #showcase h1 {
